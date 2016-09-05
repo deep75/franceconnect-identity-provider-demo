@@ -2,7 +2,7 @@
 
 ![fc particulier](https://fcp.integ01.dev-franceconnect.fr/images/fc_logo_alt2_v2.png)
 
-Documentation de FranceConnect Particulier : [FC Particulier](https://franceconnect.gouv.fr/)
+Portail de FranceConnect Particulier : [FC Particulier](https://franceconnect.gouv.fr/)
 
 Pour créer et lancer l'image Docker de ce fournisseur d'identité, il faut exécuter par exemple les commandes suivantes :
 
