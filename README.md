@@ -11,7 +11,7 @@ et ouvrir :
     http://localhost
 
 
-ou bien avec Docker Swarm avec plusieurs noeuds depuis la version 1.12 :
+ou bien avec un cluster Docker Swarm (à plusieurs noeuds) depuis la version 1.12 :
 
     user@machine $ : docker swarm init
     user@machine $ : docker network create -d overlay fi-net
