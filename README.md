@@ -11,7 +11,7 @@ et ouvrir :
     http://localhost
 
 
-ou bien avec un cluster Docker Swarm (à plusieurs noeuds) depuis la version 1.12 :
+ou bien par exemple avec un cluster Docker Swarm (à plusieurs noeuds) depuis la version 1.12 :
 
     user@master $ : docker swarm init
     user@noeuds $ : docker swarm join --token 'TOKEN' (IP de l'hôte Swarm Master):2377 => pour les noeuds se joignant au cluster
