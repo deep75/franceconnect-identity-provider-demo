@@ -1,4 +1,9 @@
 # Exemple de fournisseur d'identité compatible avec France Connect Particulier utilisant OpenID Connect et Node.js
+
+![fc particulier](https://fcp.integ01.dev-franceconnect.fr/images/fc_logo_alt2_v2.png)
+
+Documentation de FranceConnect Particulier : [FC Particulier](https://franceconnect.gouv.fr/)
+
 Pour créer et lancer l'image Docker de ce fournisseur d'identité, il faut exécuter par exemple les commandes suivantes :
 
     user@machine $ : git clone https://github.com/deep75/franceconnect-identity-provider-demo
