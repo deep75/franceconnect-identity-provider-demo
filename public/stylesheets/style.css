@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  padding: 50px;
+  font: 14px "Arial, sans-serif;
+}
+
+.rounded {
+  padding: 8px 24px 24px 24px;
+  border: 1px solid #CCCCCC;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.rounded h2 {
+  font-size: 1.2em;
+  border-bottom: 5px solid #EBEBEB;
+  padding-bottom: 2px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+@media only all and (min-width: 1000px) {
+
+  #conteneur {
+    padding: 42px 93px;
+  }
+
+  #page {
+    width: 972px;
+  }
+
+  #header {
+    width: 100%;
+    height: 60px;
+  }
+}

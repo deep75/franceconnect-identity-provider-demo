@@ -1,0 +1,20 @@
+{
+  "env":"development",
+  "issuerURL":"http://ameli-franceconnect.fr/",
+  "identityProvider":"ameli",
+  "mongo": {
+    "hosts": ["localhost"],
+    "port": 27017,
+    "db": "fi",
+    "options": {
+      "server": {
+        "poolsize": 3
+      },
+      "replset": {
+        "rs_name": "rs0"
+      },
+      "user": "",
+      "pass": ""
+    }
+  }
+}

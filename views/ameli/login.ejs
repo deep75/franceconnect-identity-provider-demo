@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>ameli.fr - Connexion avec FranceConnect</title>
+
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body style="background-color: white; min-height: 100%; color: #C84294" width="device-width">
+<div style="width: 100%">
+    <div style="width: 100%">
+        <div class="container" style="margin: auto; max-width: 763px">
+            <div class="page-header">
+                <img src="/images/ameli/banner.png" style="max-width: 100%;"/>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <img src="/images/ameli/connexion.png" style="max-width: 100%"/>
+                </div>
+                <div class="col-xs-8 col-md-8">
+                    <p class="bg-info">
+                        Ceci est une application de démonstration. N'utilisez pas vos vrais identifiants.
+                    </p>
+                    <h4>Je me connecte à FranceConnect avec mon
+                        compte Ameli :</h4>
+
+                    <% if(error) { %>
+                    <div class="alert alert-danger" role="alert">
+                            <span class="sr-only">Error:</span>
+                            <%= error %>
+                    </div>
+                    <% } %>
+
+                    <div class="r_cadre_rose">
+
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="identifier">
+                                    Mon numéro de sécurité sociale :
+                                </label>
+                                <input class="form-control" type="text" name="identifier">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">
+                                    Mon code :
+                                </label>
+                                <input class="form-control" type="password" name="password">
+                            </div>
+                            <button type="submit" class="btn btn-default" value="Valider"
+                                    name="submit">Valider
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
