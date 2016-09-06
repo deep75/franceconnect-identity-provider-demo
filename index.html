@@ -31,12 +31,12 @@
 <pre><code>user@machine $ : git clone https://github.com/deep75/franceconnect-identity-provider-demo
 user@machine $ : cd franceconnect-identity-provider-demo
 user@machine $ : docker build -t franceconnect-identity-provider-demo .
-user@machine $ : docker run -d -p 80:3042 franceconnect-identity-provider-demo
+user@machine $ : docker run -d -p 3042:3042 franceconnect-identity-provider-demo
 </code></pre>
 
 <p>et ouvrir :</p>
 
-<pre><code>http://localhost
+<pre><code>http://localhost:3042
 </code></pre>
 
 <p>ou bien par exemple avec un cluster Docker Swarm (à plusieurs noeuds) depuis la version 1.12 :</p>
@@ -44,14 +44,17 @@ user@machine $ : docker run -d -p 80:3042 franceconnect-identity-provider-demo
 <pre><code>user@master $ : docker swarm init
 user@noeuds $ : docker swarm join --token 'TOKEN' (IP de l'hôte Swarm Master):2377 =&gt; pour les noeuds se joignant au cluster
 user@master $ : docker network create -d overlay fi-net
-user@master $ : docker service create --name franceconnect-identity-provider --network fi-net --replicas 5 -p 80:3042/tcp mcas/franceconnect-identity-providers:latest
+user@master $ : docker service create --name franceconnect-identity-provider --network fi-net --replicas 5 -p 3042:3042/tcp mcas/franceconnect-identity-providers:latest
 user@master $ : docker service scale franceconnect-identity-provider=10
 </code></pre>
 
 <p>et ouvrir :</p>
 
-<pre><code>http://(IP de l'hôte Swarm Master)
+<pre><code>http://(IP de l'hôte Swarm Master):3042
 </code></pre>
+
+<p><img src="http://img4.hostingpics.net/pics/536586Selection007.png" alt="shot1">
+<img src="http://img4.hostingpics.net/pics/117452Selection008.png" alt="shot2"></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/deep75/franceconnect-identity-provider-demo">Franceconnect-identity-provider-demo</a> is maintained by <a href="https://github.com/deep75">deep75</a>.</span>
